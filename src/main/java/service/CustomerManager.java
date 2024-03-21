@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package service; // A MODIFIER suivant le paquetage de base... 
+package service; // Cette classe permet la gestion des méthodes de CustomerManager dans la base de donnée
 
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.transaction.Transactional;
@@ -19,7 +19,7 @@ import mg.etu.tp1.customer.noam.francisco.antoenjara.entity.Customer;
  * @author xxxx
  */
 @RequestScoped
-public class CustomerManager { // Cette classe permet la gestion des méthodes de CustomerManager dans la base de donnée
+public class CustomerManager { 
     
 @PersistenceContext(unitName = "customerPU")
 private EntityManager em;
