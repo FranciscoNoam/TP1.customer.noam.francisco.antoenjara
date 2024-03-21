@@ -21,6 +21,7 @@ import java.io.Serializable;
 /**
  *
  * @author francisco
+ *  Cette classe permet la gestion de l'entité Customer dans la base de donnée
  */
 @Entity
 @Table(name = "CUSTOMER")

@@ -23,6 +23,7 @@ import java.util.Collection;
 /**
  *
  * @author francisco
+ * Cette classe permet la gestion de l'entité Micro Market dans la base de donnée
  */
 @Entity
 @Table(name = "MICRO_MARKET")
