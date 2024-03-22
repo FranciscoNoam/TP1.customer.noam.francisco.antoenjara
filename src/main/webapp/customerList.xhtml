@@ -32,23 +32,29 @@
          </f:facet>
          <h:link value="#{item.name}"/>
       </p:column>
-      <p:column  headerText="Ville" filterBy="#{item.city}" sortBy="#{item.city}">
+      <p:column  headerText="Ville" sortBy="#{item.city}">
          <f:facet name="header">
-             <h:link value="Ville"/>
+            <h:outputText value="Ville"/>
          </f:facet>
-         <h:link value="#{item.city}"/>
+         <h:outputText value="#{item.city}"/>
       </p:column>
-      <p:column >
+      <p:column  headerText="Etat" filterBy="#{item.state}"  sortBy="#{item.state}">
          <f:facet name="header">
-             <h:link value="Discount"/>
+             <h:outputText value="Etat"/>
          </f:facet>
-          <h:link value="#{item.discount.code} : #{item.discount.rate} %"/>
+         <h:outputText value="#{item.state}"/>
       </p:column>
-      <p:column >
+      <p:column sortBy="#{item.discount.code}">
+         <f:facet name="header">
+             <h:outputText value="Discount"/>
+         </f:facet>
+          <h:outputText value="#{item.discount.code} : #{item.discount.rate} %"/>
+      </p:column>
+      <p:column  sortBy="#{item.zip.zipCode}">
         <f:facet name="header">
-            <h:link value="Zip"/>
+            <h:outputText value="Zip"/>
         </f:facet>
-         <h:link value="#{item.zip.zipCode}"/>
+         <h:outputText value="#{item.zip.zipCode}"/>
       </p:column>
   </p:dataTable>
     </h:body>
