@@ -39,4 +39,8 @@ public void persist(Customer customer) {
     public Customer update(Customer customer) { // Cette méthode permet de modifier un Customer
        return em.merge(customer);
     } 
+    
+     public Customer findById(int idCustomer) {  
+        return em.find(Customer.class, idCustomer);  
+      }
 }
