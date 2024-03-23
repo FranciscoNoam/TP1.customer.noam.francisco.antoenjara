@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package mg.etu.tp1.customer.noam.francisco.antoenjara.entity;
+package mg.ANTOENJARA.tpCustomer.entity;
 
 import jakarta.persistence.Basic;
 import jakarta.persistence.Column;
@@ -37,7 +37,10 @@ import java.io.Serializable;
     @NamedQuery(name = "Customer.findByPhone", query = "SELECT c FROM Customer c WHERE c.phone = :phone"),
     @NamedQuery(name = "Customer.findByFax", query = "SELECT c FROM Customer c WHERE c.fax = :fax"),
     @NamedQuery(name = "Customer.findByEmail", query = "SELECT c FROM Customer c WHERE c.email = :email"),
-    @NamedQuery(name = "Customer.findByCreditLimit", query = "SELECT c FROM Customer c WHERE c.creditLimit = :creditLimit")})
+    @NamedQuery(name = "Customer.findByCreditLimit", query = "SELECT c FROM Customer c WHERE c.creditLimit = :creditLimit"),
+    @NamedQuery(name = "Customer.findAllOrderedByNameASC", query = "SELECT c FROM Customer c ORDER BY c.name ASC"),
+    @NamedQuery(name = "Customer.findAllOrderedByNameDESC", query = "SELECT c FROM Customer c ORDER BY c.name DESC")})
+
 public class Customer implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -207,7 +210,7 @@ public class Customer implements Serializable {
 
     @Override
     public String toString() {
-        return "mg.etu.tp1.customer.noam.francisco.antoenjara.entity.Customer[ customerId=" + customerId + " ]";
+        return "mg.ANTOENJARA.tpCustomerANTOENJARA.entity.Customer[ customerId=" + customerId + " ]";
     }
     
 }

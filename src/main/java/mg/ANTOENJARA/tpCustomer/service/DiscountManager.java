@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package service; // Cette classe permet la gestion des méthodes de DiscountManager dans la base de donnée
+package mg.ANTOENJARA.tpCustomer.service; // Cette classe permet la gestion des méthodes de DiscountManager dans la base de donnée
 
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.transaction.Transactional;
@@ -10,7 +10,7 @@ import java.util.List;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.Query;
-import mg.etu.tp1.customer.noam.francisco.antoenjara.entity.Discount;
+import mg.ANTOENJARA.tpCustomer.entity.Discount;
 
 /**
  * Façade pour gérer les Customers.

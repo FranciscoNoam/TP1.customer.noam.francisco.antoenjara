@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package service; // Cette classe permet la gestion des méthodes de CustomerManager dans la base de donnée
+package mg.ANTOENJARA.tpCustomer.service; // Cette classe permet la gestion des méthodes de CustomerManager dans la base de donnée
 
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.transaction.Transactional;
@@ -10,7 +10,8 @@ import java.util.List;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.Query;
-import mg.etu.tp1.customer.noam.francisco.antoenjara.entity.Customer;
+import mg.ANTOENJARA.tpCustomer.entity.Customer;
+
 
 
 
@@ -35,6 +36,14 @@ public void persist(Customer customer) {
        return query.getResultList();
     }  
 
+  public List<Customer> getAllCustomersOrderByName(boolean sort) {  // Cette méthode permet de récuperer tous la liste de Customer
+      Query query = em.createNamedQuery("Customer.findAllOrderedByNameASC");
+        if(sort==false){
+            query = em.createNamedQuery("Customer.findAllOrderedByNameDESC");
+        }
+       return query.getResultList();
+    } 
+  
     @Transactional
     public Customer update(Customer customer) { // Cette méthode permet de modifier un Customer
        return em.merge(customer);

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package mg.etu.tp1.customer.noam.francisco.antoenjara.entity;
+package mg.ANTOENJARA.tpCustomer.entity;
 
 import jakarta.persistence.Basic;
 import jakarta.persistence.CascadeType;
@@ -102,7 +102,7 @@ public class Discount implements Serializable {
 
     @Override
     public String toString() {
-        return "mg.etu.tp1.customer.noam.francisco.antoenjara.entity.Discount[ code=" + code + " ]";
+        return "mg.ANTOENJARA.tpCustomerANTOENJARA.entity.Discount[ code=" + code + " ]";
     }
     
 }

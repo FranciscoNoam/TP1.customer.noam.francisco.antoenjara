@@ -1,4 +1,4 @@
-package mg.etu.tp1.customer.noam.francisco.antoenjara;
+package mg.ANTOENJARA.tpCustomer;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;

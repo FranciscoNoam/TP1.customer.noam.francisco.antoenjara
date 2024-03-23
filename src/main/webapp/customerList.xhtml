@@ -8,58 +8,62 @@
         <title>Customer List</title>
     </h:head>
     <h:body>
+        <h:form>
         <p:dataTable value="#{customerBean.customers}" var="item" 
-                widgetVar="customerTable"
-                emptyMessage="Aucun client avec ce critère"
-                paginator="true" rows="10" rowsPerPageTemplate="2,4,8,10"
-                paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
-                >
+                     widgetVar="customerTable"
+                     emptyMessage="Aucun client avec ce critère"
+                     paginator="true" rows="10" rowsPerPageTemplate="2,4,8,10"
+                     paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                     >
             <f:facet name="header">
                 <p:outputPanel>
-                   <h:outputText value="Recherche dans tous les champs de recherche"/>
-                   <p:inputText id="globalFilter" onkeyup="PF('customerTable').filter()"
-                                style="width:150px"/>
+                    <h:outputText value="Recherche dans tous les champs de recherche"/>
+                    <p:inputText id="globalFilter" onkeyup="PF('customerTable').filter()"
+                                 style="width:150px"/>
                 </p:outputPanel>
-             </f:facet>
-      <p:column >
-         <f:facet name="header">
-             <h:outputText value="CustomerId"/>
-         </f:facet>
-          
-         <h:link outcome="customerDetails?idCustomer=#{item.customerId}" 
-             value="#{item.customerId}"/>
-      </p:column>
+            </f:facet>
+            <p:column >
+                <f:facet name="header">
+                    <h:outputText value="CustomerId"/>
+                </f:facet>
 
-      <p:column  headerText="Nom"  filterBy="#{item.name}" sortBy="#{item.name}">
-         <f:facet name="header">
-             <h:outputText value="Nom"/>
-         </f:facet>
-         <h:outputText value="#{item.name}"/>
-      </p:column>·
+                <h:link outcome="customerDetails?idCustomer=#{item.customerId}" 
+                        value="#{item.customerId}"/>
+            </p:column>
+           
+            <p:column  filterBy="#{item.name}" sortBy="#{item.name}">
+                <f:facet name="header">
+                    <h:outputText value="Nom"/>
+                </f:facet>
+                <h:outputText value="#{item.name}"/>
+            </p:column>
+            
+            
+            <p:column  headerText="Ville" sortBy="#{item.city}">
+                <f:facet name="ville">
+                    <h:outputText value="Ville"/>
+                </f:facet>
+                <h:outputText value="#{item.city}"/>
+            </p:column>
+            <p:column  headerText="Discount" sortBy="#{item.discount.code}">
+                <f:facet name="discount">
+                    <h:outputText value="Discount"/>
+                </f:facet>
+                <h:outputText value="#{item.discount.code} : #{item.discount.rate} %"/>
+            </p:column>
+            <p:column  headerText="Zip" sortBy="#{item.zip.zipCode}">
+                <f:facet name="zip">
+                    <h:outputText value="Zip"/>
+                </f:facet>
+                <h:outputText value="#{item.zip.zipCode}"/>
+            </p:column>
             <p:column  headerText="Etat" filterBy="#{item.state}"  sortBy="#{item.state}">
-         <f:facet name="header">
-             <h:outputText value="Etat"/>
-         </f:facet>
-         <h:outputText value="#{item.state}"/>
-      </p:column>
-      <p:column  headerText="Ville" sortBy="#{item.city}">
-         <f:facet name="header">
-            <h:outputText value="Ville"/>
-         </f:facet>
-         <h:outputText value="#{item.city}"/>
-      </p:column>
-      <p:column sortBy="#{item.discount.code}">
-         <f:facet name="header">
-             <h:outputText value="Discount"/>
-         </f:facet>
-          <h:outputText value="#{item.discount.code} : #{item.discount.rate} %"/>
-      </p:column>
-      <p:column  sortBy="#{item.zip.zipCode}">
-        <f:facet name="header">
-            <h:outputText value="Zip"/>
-        </f:facet>
-         <h:outputText value="#{item.zip.zipCode}"/>
-      </p:column>
-  </p:dataTable>
+                <f:facet name="etat">
+                    <h:outputText value="Etat"/>
+                </f:facet>
+                <h:outputText value="#{item.state}"/>
+            </p:column>
+        </p:dataTable>
+            </h:form>
     </h:body>
 </html>

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package jsf; // Cette classe permet de récuperer le détail d'un Customer
+package mg.ANTOENJARA.tpCustomer.jsf; // Cette classe permet de récuperer le détail d'un Customer
 
 /**
  *
@@ -13,10 +13,10 @@ import jakarta.inject.Inject;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Named;
 import java.util.List;
-import mg.etu.tp1.customer.noam.francisco.antoenjara.entity.Customer;
-import mg.etu.tp1.customer.noam.francisco.antoenjara.entity.Discount;
-import service.CustomerManager;
-import service.DiscountManager;
+import mg.ANTOENJARA.tpCustomer.entity.Customer;
+import mg.ANTOENJARA.tpCustomer.entity.Discount;
+import mg.ANTOENJARA.tpCustomer.service.CustomerManager;
+import mg.ANTOENJARA.tpCustomer.service.DiscountManager;
 
 /**
  * Backing bean pour la page customerDetails.xhtml.
@@ -84,5 +84,6 @@ public class CustomerDetailsBean implements Serializable {
         this.discounts = discountManager.getAllDiscounts();
         return discounts;
     }
+
 
 }
