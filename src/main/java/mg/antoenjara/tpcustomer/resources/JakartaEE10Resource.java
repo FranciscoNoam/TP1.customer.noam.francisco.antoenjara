@@ -1,4 +1,4 @@
-package mg.ANTOENJARA.tpCustomer.resources;
+package mg.antoenjara.tpcustomer.resources;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;

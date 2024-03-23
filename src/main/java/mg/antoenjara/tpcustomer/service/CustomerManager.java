@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package mg.ANTOENJARA.tpCustomer.service; // Cette classe permet la gestion des méthodes de CustomerManager dans la base de donnée
+package mg.antoenjara.tpcustomer.service; // Cette classe permet la gestion des méthodes de CustomerManager dans la base de donnée
 
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.transaction.Transactional;
@@ -10,7 +10,7 @@ import java.util.List;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.Query;
-import mg.ANTOENJARA.tpCustomer.entities.Customer;
+import mg.antoenjara.tpcustomer.entities.Customer;
 
 
 

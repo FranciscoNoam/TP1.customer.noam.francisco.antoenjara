@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package mg.ANTOENJARA.tpCustomer.jsf; // Cette classe permet de récuperer le détail d'un Customer
+package mg.antoenjara.tpcustomer.jsf; // Cette classe permet de récuperer le détail d'un Customer
 
 /**
  *
@@ -13,10 +13,10 @@ import jakarta.inject.Inject;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Named;
 import java.util.List;
-import mg.ANTOENJARA.tpCustomer.entities.Customer;
-import mg.ANTOENJARA.tpCustomer.entities.Discount;
-import mg.ANTOENJARA.tpCustomer.service.CustomerManager;
-import mg.ANTOENJARA.tpCustomer.service.DiscountManager;
+import mg.antoenjara.tpcustomer.entities.Customer;
+import mg.antoenjara.tpcustomer.entities.Discount;
+import mg.antoenjara.tpcustomer.service.CustomerManager;
+import mg.antoenjara.tpcustomer.service.DiscountManager;
 
 /**
  * Backing bean pour la page customerDetails.xhtml.

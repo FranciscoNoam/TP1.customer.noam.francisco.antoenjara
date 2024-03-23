@@ -1,4 +1,4 @@
-package mg.ANTOENJARA.tpCustomer;
+package mg.antoenjara.tpcustomer;
 
 import jakarta.ws.rs.ApplicationPath;
 import jakarta.ws.rs.core.Application;
