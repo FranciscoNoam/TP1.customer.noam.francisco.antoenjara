@@ -13,8 +13,8 @@ import jakarta.inject.Inject;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Named;
 import java.util.List;
-import mg.ANTOENJARA.tpCustomer.entity.Customer;
-import mg.ANTOENJARA.tpCustomer.entity.Discount;
+import mg.ANTOENJARA.tpCustomer.entities.Customer;
+import mg.ANTOENJARA.tpCustomer.entities.Discount;
 import mg.ANTOENJARA.tpCustomer.service.CustomerManager;
 import mg.ANTOENJARA.tpCustomer.service.DiscountManager;
 

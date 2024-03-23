@@ -9,7 +9,7 @@ import jakarta.inject.Named;
 import jakarta.faces.view.ViewScoped;
 import java.io.Serializable;
 import java.util.List;
-import mg.ANTOENJARA.tpCustomer.entity.Customer;
+import mg.ANTOENJARA.tpCustomer.entities.Customer;
 import mg.ANTOENJARA.tpCustomer.service.CustomerManager;
 
 /**

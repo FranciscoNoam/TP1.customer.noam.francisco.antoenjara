@@ -10,7 +10,7 @@ import java.util.List;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.Query;
-import mg.ANTOENJARA.tpCustomer.entity.Discount;
+import mg.ANTOENJARA.tpCustomer.entities.Discount;
 
 /**
  * Façade pour gérer les Customers.

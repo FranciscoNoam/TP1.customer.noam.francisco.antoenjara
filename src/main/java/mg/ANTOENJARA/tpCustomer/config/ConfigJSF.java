@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package config; // Cette classe permet la permet d'activer JSF et cette  classe durera tout le temps que l'application s'exécutera
+package mg.ANTOENJARA.tpCustomer.config; // Cette classe permet la permet d'activer JSF et cette  classe durera tout le temps que l'application s'exécutera
 
 /**
  *
