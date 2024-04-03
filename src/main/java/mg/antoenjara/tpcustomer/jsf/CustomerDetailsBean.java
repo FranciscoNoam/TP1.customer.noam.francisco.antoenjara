@@ -26,7 +26,7 @@ public class CustomerDetailsBean implements Serializable {
     private int idCustomer;
     private Customer customer;
     private List<Discount> discounts;
-
+    private DiscountConverter discountConverter;
     @Inject
     private CustomerManager customerManager;
     @Inject
@@ -76,5 +76,9 @@ public class CustomerDetailsBean implements Serializable {
     public List<Discount> getDiscounts() {
         this.setDiscounts(discountManager.getAllDiscounts());
         return this.discounts;
+    }
+    
+     public DiscountConverter getDiscountConverter() {
+        return this.discountConverter;
     }
 }

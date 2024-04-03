@@ -46,7 +46,7 @@ public class DiscountManager {
      * @param idDiscount
      * @return
      */
-    public Discount findById(int idDiscount) {
+    public Discount findById(String idDiscount) {
         return em.find(Discount.class, idDiscount);
     }
 
